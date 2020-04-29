@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- link for the material icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- link for the cool materila css -->
+    <link rel="stylesheet" href="materialcss/materialize/css/materialize.css">
+    <!-- js for the material css -->
+    <script src="materialcss/materialize/js/materialize.min.js"></script>
+
+    <!-- javascript -->
+    <script src="src.js"></script>
+  </head>
+  <body>
+   
+     <!-- navbar -->
+  <div class="nav">
+
+  </div>
+
+
+  <!-- landing image container -->
+    <div class="landing_image">
+      <div class="inner_container">
+        <div class="content">
+          <h3>Welcome to best GROCERY</h3>
+          <h5>Grab at the cheapest price</h5>
+          <i class="material-icons">arrow_downward</i>
+        </div>
+      </div>
+    </div>
+ 
+
+    <!-- header -->
+    <div class="header  card">
+      Below are the ITEMS
+    </div>
+
+    <!-- section 1 -->
+    <div class="container">
+      <div class="block1 row">
+        <div class="item col s12 m6 " >
+          <img
+            src="asset/assirwad.jpg"
+            alt="assirwad"
+            height="400px"
+            width="400px"
+          />
+          <h3>Aashirvaad atta</h3>
+        </div>
+
+
+        <!-- section 2 which is the item details-->
+        <div class="item_details  col s12 m6 ">
+          <div class="name toast">
+            <p>Aashirvaad Whole grain atta</p>
+          </div>
+          <div class="price">
+            <p>Rs 333</p>
+          </div>
+        
+          <div class="size">
+               <span class="chip">  pack sizes</span>
+            <div >
+               <p class="btn btn-large" id="333" onclick="change_quantity(this)" >10kg</p>
+               <p>Rs 333.00</p>
+            </div>
+            <div>
+                <p  class="btn btn-large" id="999" onclick="change_quantity(this)">20kg</p>
+               <p>Rs 999.00</p>
+            </div>
+          </div>
+          <div class="quantity">
+                <div class="add  btn" onclick="add()">+</i></div>
+              <div class="sub  btn" onclick="sub()">-</div>
+              <div class="result" id="result">0</div>
+          </div>
+          <div class="pay">
+             <span class="chip">Payable amount</span>
+             <div class="amount ">
+            
+              <p class="payable_amount green-text bold" id="payable_amt">Rs 0</p>
+             </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- section 3 -->
+      <div class="block2  row">
+        <div class="itemcontainer col s12 m4">
+          <div class="image card ">
+            <img src="asset/masala.jpg" alt="masala packet image" id="image_to_show">
+            <h4 class="blue-text">
+             Find at the cheapest
+            </h4>
+          </div>
+        </div>
+
+
+        <!-- section 4 -->
+        <div class="item_gallery col s12 m8">
+            
+        <div class="item1 card img1 waves-effect" >
+          <img   src="asset/rice.jpg" alt="" >
+          <img   src="asset/riceproduct.jpg" alt="" onclick="change_image(this)">
+        </div>
+        <div class="item2 card img2 waves-effect">
+          <img  src="asset/flour.jpg" alt="" >
+          <img  src="asset/assirwad.jpg" alt="" onclick="change_image(this)">
+        </div>
+        <div class="item3 card img3 waves-effect">
+          <img  src="asset/masala2.jpg" alt="" >
+          <img  src="asset/masala.jpg" alt="" onclick="change_image(this)">
+        </div>
+        <div class="item4 card img4 waves-effect">
+          <img  src="asset/oil2.jpg" alt="" >
+          <img  src="asset/oil.jpg" alt="" onclick="change_image(this)">
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
