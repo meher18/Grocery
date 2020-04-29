@@ -1,6 +1,14 @@
 body {
   margin: 0px;
   padding: 0px;
+  background-image: url(asset/shopping.jpg);
+  background-position: top;
+  background-size: cover;
+}
+.inner_body{
+    background-color: rgba(0,0,0, 0.6);
+    height: inherit;
+    width: inherit;
 }
 
 .nav {
@@ -10,7 +18,7 @@ body {
 
 .landing_image {
   background-image: url(asset/shopping.jpg);
-  height: 60vh;
+  height: 80vh;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -31,13 +39,16 @@ body {
 }
 .header {
   height: 10vh;
-  color: #444;
+  color: #aaa;
+  background-color: #444;
   text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
   align-content: center;
   font-size: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #333;
 }
 .container {
   margin: 10px 30px;
@@ -45,12 +56,18 @@ body {
   align-content: center;
   flex-direction: column;
   justify-content: space-evenly;
+
 }
 .block1 {
 margin-top: 50px;
+display: flex;
+flex-direction: row;
+padding: 40px;
+background-color: #fff;
+border-radius: 10px;
 }
 .item {
-  flex: 1;
+  
   text-align: center;
   display: flex;
   justify-content: space-evenly;
@@ -59,13 +76,16 @@ margin-top: 50px;
   font-size: larger;
   color: #333;
   padding: 40px;
+  margin: 0px 50px;
+  background-color: transparent;
 }
 .item_details {
   color: #999;
   display: flex;
   flex-direction: column;
-  flex: 2;
+ 
   height: 80vh;
+  background-color: white;
   padding: 20px;
   box-shadow: 1px 1px 4px 1px #333;
   border-radius: 10px;
@@ -73,7 +93,7 @@ margin-top: 50px;
 .name {
   font-size: 20px;
   font-family: sans-serif;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.4rem;
 }
 .size {
   display: flex;
@@ -156,6 +176,18 @@ margin-top: 50px;
   width: 150px;
   height: 200px;
 }
+.footer{
+    margin-top: 20px;
+height: 15vh;
+background-color: #111;
+display: flex;
+justify-content: space-around;
+text-align: center;
+color: red;
+align-items: center;
+align-content: center;
+padding: 20px;
+}
 
 
 /* for the mobile view */
@@ -225,6 +257,13 @@ body {
 }
 .block1 {
 margin-top: 50px;
+display: flex;
+flex-direction: column;
+
+align-items: center;
+justify-content: space-evenly;
+background-color: white;
+border-radius: 10px;
 }
 .item {
   flex: 1;
@@ -247,7 +286,7 @@ margin-top: 50px;
   display: flex;
   flex-direction: column;
   flex: 2;
- height: 120vh;
+ height: 110vh;
  margin: 0px 20px;
  padding: 20px;
   
@@ -356,8 +395,8 @@ margin-top: 50px;
   flex-direction: row;
 }
 .item_gallery div img {
-  width: 150px;
-  height: 200px;
+  width: 70px;
+  height: 70px;
 }
 
 
